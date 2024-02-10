@@ -67,8 +67,10 @@ section {
     margin-top: 62px;
     max-width: 542px;
     font-family: var(--font-golos-text);
+    white-space: normal;
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 .content h1 {
@@ -82,6 +84,8 @@ section {
 .content p {
     text-align: center;
     margin-top: 24px;
+    max-width: 500px;
+    align-self: center;
     color: var(--color-primary);
     font-family: var(--font-golos-text);
     font-weight: normal;
@@ -269,9 +273,6 @@ td {
     align-items: center;
     justify-content: center;
     margin-right: 16px;
-    /*position: absolute;*/
-    /*top: 38px;*/
-    /*left: 38px;*/
 }
 
 .steps-block:nth-child(1)::before { content: '1'; }
@@ -451,5 +452,226 @@ footer p {
 
     footer {
         padding: 40px 72px 72px 72px;
+    }
+}
+
+/* Media query for devices less than 375px */
+@media screen and (max-width: 375px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    section {
+        padding: 40px 16px;
+    }
+
+    .hero {
+        background-image:url("public/color_burn.png"), url("public/backgound375.png") ;
+        padding: 26px 20px;
+        min-height: calc(100vh - 38px);
+    }
+
+    .content {
+        margin-top: 40px;
+        max-width: 335px;
+    }
+
+    .content h1 {
+        font-size: 36px;
+    }
+
+    .content p {
+        text-align: left;
+        margin-top: 24px;
+        color: var(--color-primary);
+        font-weight: normal;
+        font-size: 18px;
+    }
+
+    .btn-group {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 32px;
+    }
+
+    .btn1,
+    .btn2 {
+        max-width: 100%;
+        width: auto;
+        margin-bottom: 14px;
+        padding: 18px 43px;
+        min-width: 335px;
+    }
+
+    .btn2 {
+        background-color: #fff;
+        border: none;
+    }
+
+    .marquee h1 {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+
+    .support-group {
+        flex-direction: column;
+        margin-bottom: 32px;
+    }
+
+    .support-group h2 {
+        max-width: 335px;
+        font-size: 28px;
+    }
+
+    #support-group-text-1 {
+        order: 1;
+    }
+    #support-group-text-2 {
+        order: 3;
+    }
+
+    #support-group-text-3 {
+        order: 2;
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        margin: 24px 0;
+    }
+
+    #support-group-content1 {
+        max-width: 335px;
+        margin-bottom: 24px;
+    }
+
+    .support-group div {
+        margin: 0;
+    }
+
+    table {
+        margin-top: 44px;
+        width: 100%;
+    }
+
+    td {
+        display: block;
+        border: none;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .table-name,
+    .table-description {
+        font-size: 20px;
+        padding: 0;
+    }
+
+    .table-name {
+        padding-top: 12px;
+    }
+
+    .table-description {
+        padding-bottom: 12px;
+        border-bottom: 2px solid #D0D0D0;
+    }
+
+    .about {
+        margin-top: 40px;
+    }
+
+    .steps-section {
+        grid-template-columns: 1fr;
+        grid-gap: 16px;
+        margin-bottom: 100px;
+    }
+
+    .steps-header-h1 {
+        max-width: 335px;
+        font-size: 36px;
+    }
+
+    .steps-header-span {
+        max-width: 335px;
+        margin-top: 12px;
+    }
+
+    .steps-header {
+        margin-bottom: 150px;
+    }
+
+    #desktopSteps {
+        display: none;
+    }
+
+    .steps-slider {
+        min-width: 100%;
+        margin-bottom: 16px;
+        overflow: hidden;
+        white-space: normal;
+        display: flex;
+    }
+
+    .steps-slider div {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .steps-block {
+        min-width: 100%;
+        margin-bottom: 28px;
+    }
+
+    .with-image img {
+        display: none;
+    }
+
+    .participants-header h1 {
+        font-size: 32px;
+    }
+
+    .participants-buttons {
+        justify-content: center;
+        margin-bottom: 120px;
+    }
+
+    .participants-buttons button {
+        width: 36px;
+        height: 36px;
+        margin: 0 8px 0 8px;
+    }
+
+    .participants-buttons img {
+        display: none;
+    }
+
+    .participants-buttons p,
+    .participants-buttons span {
+        font-size: 12px;
+    }
+
+    .participants-wrapper {
+        flex-wrap: nowrap;
+    }
+
+    .participants-block {
+        flex: 0 0 100%;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    .participant-photo {
+        margin-bottom: 12px;
+    }
+
+    .participants-block button {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    footer {
+        padding: 40px 16px 72px 16px;
+    }
+
+    footer p {
+        font-size: 16px;
     }
 }

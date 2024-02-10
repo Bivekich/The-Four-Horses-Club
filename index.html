@@ -17,10 +17,10 @@
         <h1 style="align-self: flex-start">Превратите уездный город</h1>
         <h1 style="align-self: center">в столицу</h1>
         <h1 style="align-self: flex-end">земного шара</h1>
-        <p>Оплатите взнос на телеграммы для организации<br>Международного васюкинского турнира по шахматам</p>
+        <p>Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам</p>
         <div class="btn-group">
-            <a href="#support" onclick="scrollToAnchor('#support')" class="btn1">Поддержать шахматную мысль</a>
-            <a href="#about" onclick="scrollToAnchor('#about')" class="btn2">Подробнее о турнире</a>
+            <a href="#support" class="btn1">Поддержать шахматную мысль</a>
+            <a href="#about" class="btn2">Подробнее о турнире</a>
         </div>
     </div>
 </section>
@@ -38,13 +38,13 @@
 <!-- Support section -->
 <section class="support" id="support">
     <div class="support-group">
-        <h2>Чтобы поддержать Международный васюкинский турнир посетите лекцию на тему: <b>«Плодотворная дебютная идея»</b></h2>
-        <img src="public/support1.png" alt="Support 1">
+        <h2 id="support-group-text-1">Чтобы поддержать Международный васюкинский турнир <span id="support-group-text-2">посетите лекцию на тему: <b>«Плодотворная дебютная идея»</b></span></h2>
+        <img id="support-group-text-3" src="public/support1.png" alt="Support 1">
     </div>
     <div class="support-group">
-        <img src="public/support2.png" alt="Support 2">
+        <img id="support-group-content1" src="public/support2.png" alt="Support 2">
         <div>
-            <h2>и Сеанс <b>одновременной игры в шахматы на 160 досках</b> гроссмейстера О. Бендера</h2>
+            <h2 >и Сеанс <b>одновременной игры в шахматы на 160 досках</b> гроссмейстера О. Бендера</h2>
             <table>
                 <tbody>
                 <tr>
@@ -80,7 +80,7 @@
         <div class="steps-header">
             <div class="steps-header-h1">Этапы преображения Васюков <span class="steps-header-span">Будущие источники обогащения васюкинцев</span></div>
         </div>
-        <div class="steps-section">
+        <div class="steps-section" id="desktopSteps">
             <div class="steps-block">Строительство железнодорожной магистрали Москва-Васюки</div>
             <div class="steps-block">Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов</div>
             <div class="steps-block">Поднятие сельского хозяйства в радиусе на тысячу километров: производство овощей, фруктов, икры, шоколадных конфет</div>
@@ -94,11 +94,30 @@
                 <img src="public/airplane.png" alt="Airplane">
             </div>
         </div>
+        <div class="steps-slider" id="mobileSteps">
+            <div class="steps-block">Строительство железнодорожной магистрали Москва-Васюки</div>
+            <div class="steps-block">Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов</div>
+            <div class="steps-block">Поднятие сельского хозяйства в радиусе на тысячу километров: производство овощей, фруктов, икры, шоколадных конфет</div>
+            <div class="steps-block">Строительство дворца для турнира</div>
+            <div class="steps-block">Размещение гаражей для гостевого автотранспорта</div>
+            <div class="steps-block">Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов</div>
+            <div class="steps-block with-image">
+                <div class="steps-block-text">
+                    Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн
+                </div>
+                <img src="public/airplane.png" alt="Airplane">
+            </div>
+        </div>
+        <div class="participants-buttons">
+            <button onclick="moveSteps(-1)" id="prevButtonStep" disabled><img src="public/arrow.png" alt="-"></button>
+            <p>3 <span>/ 6</span></p>
+            <button onclick="moveSteps(1)" id="nextButtonStep"><img src="public/arrow.png" alt="+" style="transform: rotate(180deg)"></button>
+        </div>
     </div>
     <div class="participants-group">
         <div class="participants-header">
             <h1>Участники турнира</h1>
-            <div class="participants-buttons">
+            <div class="participants-buttons" id="desktopStepsParticipantsButtons">
                 <button onclick="moveParticipants(-1)" id="prevButton" disabled><img src="public/arrow.png" alt="-"></button>
                 <p>3 <span>/ 6</span></p>
                 <button onclick="moveParticipants(1)" id="nextButton"><img src="public/arrow.png" alt="+" style="transform: rotate(180deg)"></button>
@@ -144,6 +163,11 @@
                 </div>
 
             </div>
+        </div>
+        <div class="participants-buttons" id="mobileParticipantsButtons">
+            <button onclick="moveParticipants(-1)" id="prevButton" disabled><img src="public/arrow.png" alt="-"></button>
+            <p>3 <span>/ 6</span></p>
+            <button onclick="moveParticipants(1)" id="nextButton"><img src="public/arrow.png" alt="+" style="transform: rotate(180deg)"></button>
         </div>
     </div>
 </section>

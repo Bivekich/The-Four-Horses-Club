@@ -81,3 +81,48 @@ document.querySelectorAll("a[href^='#']").forEach(link => {
         })
     })
 })
+
+let currentStep = 0;
+const totalSteps = 7;
+
+function moveSteps(direction) {
+    const stepsSlider = document.getElementById('mobileSteps');
+
+    currentStep += direction;
+
+    // Adjust step boundaries
+    if (currentStep < 0) {
+        currentStep = totalSteps - 1;
+    } else if (currentStep >= totalSteps) {
+        currentStep = 0;
+    }
+
+    // Move the steps slider
+    stepsSlider.style.transform = `translateX(-${currentStep * 100}%)`;
+}
+
+function handleWindowSizeChange() {
+    const stepsSlider = document.getElementById('mobileSteps');
+    const desktopSteps = document.getElementById('desktopSteps');
+
+    if (window.innerWidth <= 375) {
+        stepsSlider.style.display = 'flex';
+        desktopSteps.style.display = 'none';
+        currentStep = 0;
+        moveSteps(0);
+    } else {
+        stepsSlider.style.display = 'none';
+        desktopSteps.style.display = 'grid';
+    }
+}
+
+window.addEventListener('resize', handleWindowSizeChange);
+window.addEventListener('load', handleWindowSizeChange);
+
+document.getElementById('nextButtonStep').addEventListener('click', function () {
+    moveSteps(1);
+});
+
+document.getElementById('prevButtonStep').addEventListener('click', function () {
+    moveSteps(-1);
+});
