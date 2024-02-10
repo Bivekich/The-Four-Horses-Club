@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Fonts */
+    --font-golos-text: 'Golos Text', sans-serif;
+    --font-merriweather: 'Merriweather', serif;
+
+    /* Colors */
+    --color-primary: #313131;
+    --color-secondary: #3057A2;
+    --color-accent: #F54932;
+    --color-background: #E9DED4;
+}

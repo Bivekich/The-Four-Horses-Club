@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <title>КЛУБ ЧЕТЕРЫЕХ КОНЕЙ</title>
+    <link rel="stylesheet" href="./globals.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- Hero section -->
+<section class="hero">
+    <header>
+        <img src="public/logo.png" alt="Logo" class="logo">
+    </header>
+    <div class="content">
+        <h1 style="align-self: flex-start">Превратите уездный город</h1>
+        <h1 style="align-self: center">в столицу</h1>
+        <h1 style="align-self: flex-end">земного шара</h1>
+        <p>Оплатите взнос на телеграммы для организации<br>Международного васюкинского турнира по шахматам</p>
+        <div class="btn-group">
+            <a href="#support" onclick="scrollToAnchor('#support')" class="btn1">Поддержать шахматную мысль</a>
+            <a href="#about" onclick="scrollToAnchor('#about')" class="btn2">Подробнее о турнире</a>
+        </div>
+    </div>
+</section>
+<!-- Marquee -->
+<div class="marquee">
+    <div>
+        <h1> Дело помощи утопающим — дело рук самих утопающих!<b>·</b></h1>
+        <h1>Шахматы двигают вперед не только культуру, но и экономику!<b>·</b></h1>
+        <h1>Лед тронулся, господа присяжные заседатели!<b>·</b></h1>
+        <h1> Дело помощи утопающим — дело рук самих утопающих!<b>·</b></h1>
+        <h1>Шахматы двигают вперед не только культуру, но и экономику!<b>·</b></h1>
+        <h1>Лед тронулся, господа присяжные заседатели!<b>·</b></h1>
+    </div>
+</div>
+<!-- Support section -->
+<section class="support" id="support">
+    <div class="support-group">
+        <h2>Чтобы поддержать Международный васюкинский турнир посетите лекцию на тему: <b>«Плодотворная дебютная идея»</b></h2>
+        <img src="public/support1.png" alt="Support 1">
+    </div>
+    <div class="support-group">
+        <img src="public/support2.png" alt="Support 2">
+        <div>
+            <h2>и Сеанс <b>одновременной игры в шахматы на 160 досках</b> гроссмейстера О. Бендера</h2>
+            <table>
+                <tbody>
+                <tr>
+                    <td class="table-name">Место проведения:</td>
+                    <td class="table-description">Клуб «Картонажник»</td>
+                </tr>
+                <tr>
+                    <td class="table-name">Дата и время мероприятия:</td>
+                    <td class="table-description">22 июня 1927  г. в 18:00</td>
+                </tr>
+                <tr>
+                    <td class="table-name">Стоимость входных билетов:</td>
+                    <td class="table-description">20 коп.</td>
+                </tr>
+                <tr>
+                    <td class="table-name">Плата за игру:</td>
+                    <td class="table-description">50 коп.</td>
+                </tr>
+                <tr>
+                    <td class="table-name">Взнос на телеграммы:</td>
+                    <td class="table-description"><span>100 руб. </span>21 руб. 16 коп.</td>
+                </tr>
+                </tbody>
+            </table>
+            <p>По всем вопросам обращаться в администрацию к К. Михельсону</p>
+        </div>
+    </div>
+</section>
+
+<!-- About section -->
+<section id="about" class="about">
+    <div class="steps-group">
+        <div class="steps-header">
+            <div class="steps-header-h1">Этапы преображения Васюков <span class="steps-header-span">Будущие источники обогащения васюкинцев</span></div>
+        </div>
+        <div class="steps-section">
+            <div class="steps-block">Строительство железнодорожной магистрали Москва-Васюки</div>
+            <div class="steps-block">Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов</div>
+            <div class="steps-block">Поднятие сельского хозяйства в радиусе на тысячу километров: производство овощей, фруктов, икры, шоколадных конфет</div>
+            <div class="steps-block">Строительство дворца для турнира</div>
+            <div class="steps-block">Размещение гаражей для гостевого автотранспорта</div>
+            <div class="steps-block">Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов</div>
+            <div class="steps-block with-image">
+                <div class="steps-block-text">
+                    Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн
+                </div>
+                <img src="public/airplane.png" alt="Airplane">
+            </div>
+        </div>
+    </div>
+    <div class="participants-group">
+        <div class="participants-header">
+            <h1>Участники турнира</h1>
+            <div class="participants-buttons">
+                <button onclick="moveParticipants(-1)" id="prevButton" disabled><img src="public/arrow.png" alt="-"></button>
+                <p>3 <span>/ 6</span></p>
+                <button onclick="moveParticipants(1)" id="nextButton"><img src="public/arrow.png" alt="+" style="transform: rotate(180deg)"></button>
+            </div>
+        </div>
+        <div class="participants-container">
+            <div class="participants-wrapper" id="participants-wrapper">
+                <div class="participants-block">
+                    <img src="public/avatar.png" alt="User photo" class="participant-photo">
+                    <h2 class="participant-name">Хозе-Рауль Капабланка</h2>
+                    <p class="participant-position">Чемпион мира по шахматам</p>
+                    <button>Подробнее</button>
+                </div>
+                <div class="participants-block">
+                    <img src="public/avatar.png" alt="User photo" class="participant-photo">
+                    <h2 class="participant-name">Эммануил Ласкер</h2>
+                    <p class="participant-position">Чемпион мира по шахматам</p>
+                    <button>Подробнее</button>
+                </div>
+                <div class="participants-block">
+                    <img src="public/avatar.png" alt="User photo" class="participant-photo">
+                    <h2 class="participant-name">Александр Алехин</h2>
+                    <p class="participant-position">Чемпион мира по шахматам</p>
+                    <button>Подробнее</button>
+                </div>
+                <div class="participants-block">
+                    <img src="public/avatar.png" alt="User photo" class="participant-photo">
+                    <h2 class="participant-name">Арон Нимцович</h2>
+                    <p class="participant-position">Чемпион мира по шахматам</p>
+                    <button>Подробнее</button>
+                </div>
+                <div class="participants-block">
+                    <img src="public/avatar.png" alt="User photo" class="participant-photo">
+                    <h2 class="participant-name">Рихард Рети</h2>
+                    <p class="participant-position">Чемпион мира по шахматам</p>
+                    <button>Подробнее</button>
+                </div>
+                <div class="participants-block">
+                    <img src="public/avatar.png" alt="User photo" class="participant-photo">
+                    <h2 class="participant-name">Остап Бендер</h2>
+                    <p class="participant-position">Чемпион мира по шахматам</p>
+                    <button>Подробнее</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Marquee -->
+<div class="marquee">
+    <div>
+        <h1> Дело помощи утопающим — дело рук самих утопающих!<b>·</b></h1>
+        <h1>Шахматы двигают вперед не только культуру, но и экономику!<b>·</b></h1>
+        <h1>Лед тронулся, господа присяжные заседатели!<b>·</b></h1>
+        <h1> Дело помощи утопающим — дело рук самих утопающих!<b>·</b></h1>
+        <h1>Шахматы двигают вперед не только культуру, но и экономику!<b>·</b></h1>
+        <h1>Лед тронулся, господа присяжные заседатели!<b>·</b></h1>
+    </div>
+</div>
+<footer>
+    <p>Все персонажи, события и цитаты являются вымышленными и не принадлежат создателям сайта. С подробностями можно познакомиться в главе XXXIV романа Ильи Ильфа и Евгения Петрова «Двенадцать стульев».</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
