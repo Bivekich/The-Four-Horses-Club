@@ -67,12 +67,12 @@ body {
 }
 
 .header_logo__text {
-    font-family: 'Golos Text';
-    font-size: 16.65px;
+    font-family: 'Golos Text', serif;
+    font-size: 17px;
     font-weight: bold;
     line-height: 107%;
     color: #595653;
-    padding-left: 6.5px;
+    padding-left: 7px;
 }
 
 .header_content {
@@ -82,7 +82,7 @@ body {
     z-index: 10;
 }
 .header_content__heading {
-    font-family: 'Merriweather';
+    font-family: 'Merriweather', serif;
     font-weight: 400;
     font-size: 60px;
     color: #313131;
@@ -99,7 +99,7 @@ body {
     padding-left: 33px;
 }
 .header_content__signature {
-    font-family: 'Golos Text';
+    font-family: 'Golos Text', serif;
     font-size: 18px;
     line-height: 130%;
     text-align: center;
@@ -108,7 +108,7 @@ body {
 }
 .header_content__signature_575 {
     display: none;
-    font-family: 'Golos Text';
+    font-family: 'Golos Text', serif;
     font-size: 18px;
     line-height: 130%;
     color: #313131;
@@ -122,7 +122,7 @@ body {
     height: 72px;
     margin-top: 40px;
     color: #FFFFFF;
-    font-family: 'Golos Text';
+    font-family: 'Golos Text', serif;
     font-weight: 500;
     line-height: 130%;
 }
@@ -135,7 +135,6 @@ body {
     text-align: center;
     color: #FFFFFF;
     transition: all 0.3s ease;
-    cursor: pointer;
 }
 .content__buttons-support:hover {
     background: #FBCE51;
@@ -150,7 +149,7 @@ body {
     text-align: center;
     color: #1F1F1F;
     transition: all 0.3s ease;
-    cursor: pointer;
+
 }
 .content__buttons-detail:hover {
     background: #1F1F1F;
@@ -165,7 +164,7 @@ body {
     height: 110px;
     margin-top: 32px;
     color: #FFFFFF;
-    font-family: 'Golos Text';
+    font-family: 'Golos Text', serif;
     font-weight: 500;
     line-height: 130%;
     font-size: 16px;
@@ -179,7 +178,6 @@ body {
     text-align: center;
     color: #FFFFFF;
     transition: all 0.3s ease;
-    cursor: pointer;
 }
 .content__buttons-support_575:hover {
     background: #FBCE51;
@@ -195,7 +193,6 @@ body {
     color: #1F1F1F;
     background: #FFFFFF;
     transition: all 0.3s ease;
-    cursor: pointer;
 }
 .content__buttons-detail_575:hover {
     background: #1F1F1F;
@@ -210,7 +207,7 @@ body {
 
 /*------ header_leftPart ------ */
 .leftPart {
-    margin-left: 60.5px;
+    margin-left: 61px;
     position: relative;
 }
 
@@ -221,7 +218,7 @@ body {
     position: relative;
 
     background: var(--ellips-bg-image);
-    background-position: 0px 43px;
+    background-position: 0 43px;
     background-blend-mode: color-burn;
     background-color: #FBCE51;
     border-radius: 50%;
@@ -256,12 +253,11 @@ body {
     top: 270px;
     left: 55px;
     background:
-            url(public/king_bg.png) 14px 3.5px no-repeat ,
+            url(public/king_bg.png) 14px 4px no-repeat ,
             url(public/king.png);
     background-blend-mode: color-burn;
 }
 .header_kingFigure_575 {
-    position: absolute;
     width: 61px;
     height: 122px;
     position:sticky;
@@ -288,7 +284,7 @@ body {
     width: 74px;
     height: 114px;
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 640px;
     background:
             url(public/queen_bg_575.png) 4px 6px no-repeat,
@@ -304,7 +300,7 @@ body {
     height: 430px;
 
     background:
-            var(--city-bg-image) 289.5px 0 no-repeat,
+            var(--city-bg-image) 290px 0 no-repeat,
             url(public/city.png),
             url(public/recCity_right.png) 1555px 369px no-repeat,
             url(public/recCity_left.png) -10px 343px no-repeat;
@@ -318,12 +314,12 @@ body {
 .header_city_575 {
     position: absolute;
     top: 498px;
-    right: 0px;
+    right: 0;
     width: 776px;
     height: 287px;
 
     background:
-            url(public/city_bg_575_withChess.png) 135.5px 6px no-repeat,
+            url(public/city_bg_575_withChess.png) 136px 6px no-repeat,
             url(public/city_575_withChess.png) no-repeat
 ;
     background-blend-mode: color-burn;
@@ -392,7 +388,7 @@ body {
     width: 1920px;
     height: 60px;
     background-color: #F54932;
-    font-family: 'Merriweather';
+    font-family: 'Merriweather', serif;
     font-weight: 400;
     color: #FFFFFF;
     font-size: 22px;
@@ -453,7 +449,7 @@ body {
     justify-content: space-between;
 }
 .main_support__text {
-    font-family: 'Merriweather';
+    font-family: 'Merriweather', serif;
     font-weight: 400;
     font-size: 36px;
     color: #313131;
@@ -507,7 +503,7 @@ body {
     margin-top: 30px;
 }
 .simultaneousGame__rightPart-text {
-    font-family: 'Merriweather';
+    font-family: 'Merriweather', serif;
     font-weight: 400;
     font-size: 36px;
     color: #313131;
@@ -523,7 +519,7 @@ body {
 .simultaneousGame__rightPart-table {
     margin-top: 58px;
     font-size: 20px;
-    font-family: 'Golos Text';
+    font-family: 'Golos Text', serif;
     color: #313131;
     line-height: 120%;
 }
@@ -573,7 +569,7 @@ body {
 .simultaneousGame__rightPart-questions {
     margin-top: 51px;
     color: #3057A2;
-    font-family: 'Golos Text';
+    font-family: 'Golos Text', serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 120%;
@@ -597,7 +593,7 @@ body {
 .main_transformStages__header {
     width: 806px;
     height: 130px;
-    font-family: 'Merriweather';
+    font-family: 'Merriweather', serif;
     font-size: 54px;
     color: #313131;
     text-transform: uppercase;
@@ -611,7 +607,7 @@ body {
     width: 280px;
     height: 48px;
     color: #3057A2;
-    font-family: 'Golos Text';
+    font-family: 'Golos Text', serif;
     font-size: 20px;
     cursor: pointer;
     line-height: 120%;
@@ -635,7 +631,7 @@ body {
         "block_6 block_7 block_7"
 ;
 
-    font-family: 'Golos Text';
+    font-family: 'Golos Text', serif;
     color: #313131;
     line-height: 120%;
     font-size: 20px;
@@ -781,7 +777,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Golos Text';
+    font-family: 'Golos Text', serif;
     color: #313131;
     line-height: 120%;
     font-size: 20px;
@@ -955,14 +951,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: 'Golos Text';
+    font-family: 'Golos Text', serif;
     color: #313131;
     line-height: 120%;
     font-size: 16px;
     font-weight: 400;
 }
 .main_participants__header-text {
-    font-family: 'Merriweather';
+    font-family: 'Merriweather', serif;
     font-size: 54px;
     color: #313131;
     text-transform: uppercase;
@@ -1020,7 +1016,7 @@ body {
 
 .player_name {
     margin-top: 28px;
-    font-family: 'Golos Text';
+    font-family: 'Golos Text', serif;
     color: #313131;
     line-height: 120%;
     font-size: 24px;
@@ -1028,7 +1024,7 @@ body {
 }
 .player_rank {
     margin-top: 6px;
-    font-family: 'Golos Text';
+    font-family: 'Golos Text', serif;
     color: #838383;
     line-height: 120%;
     font-size: 20px;
@@ -1040,7 +1036,7 @@ body {
     border-radius: 62px;
     width: 112px;
     height: 35px;
-    font-family: 'Golos Text';
+    font-family: 'Golos Text', serif;
     color: #3057A2;
     line-height: 120%;
     font-size: 16px;
@@ -1086,7 +1082,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: absolute;
     transition: 0.5s;
 }
 
@@ -1126,7 +1121,7 @@ footer {
     margin-top: 40px;
     width: 1222px;
     height: 38px;
-    font-family: 'Golos Text';
+    font-family: 'Golos Text', serif;
     color: #838383;
     line-height: 120%;
     font-size: 16px;
@@ -1136,7 +1131,7 @@ footer {
     margin-top: 40px;
     width: 335px;
     height: 114px;
-    font-family: 'Golos Text';
+    font-family: 'Golos Text', serif;
     color: #838383;
     line-height: 120%;
     font-size: 16px;
@@ -1211,16 +1206,16 @@ footer {
         gap: 2px;
     }
     .logo__horses-horse {
-        width: 18.75px;
+        width: 19px;
         height: 27px;
     }
     .header_logo__text {
-        font-family: 'Golos Text';
-        font-size: 14.42px;
+        font-family: 'Golos Text', serif;
+        font-size: 14px;
         font-weight: bold;
         line-height: 107%;
         color: #595653;
-        padding-left: 3.5px;
+        padding-left: 4px;
     }
     .header_content {
         margin-top: 40px;
@@ -1235,7 +1230,7 @@ footer {
         padding-top: 2px;
     }
     .content__heading-2 {
-        padding-left: 63.25px;
+        padding-left: 63px;
     }
     .content__heading-3 {
         padding-left: 30px;
@@ -1287,7 +1282,7 @@ footer {
     .main_support__img {
         margin: 24px 0 24px 0;
         width: 335px;
-        height: 212.5px;
+        height: 213px;
     }
 
     .main_simultaneousGame {

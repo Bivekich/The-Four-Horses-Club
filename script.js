@@ -87,7 +87,7 @@ function prevSlide() {
 
 nextButton_576.addEventListener('click', () => {
     if (currentIndex + 3 >= players.length) {
-        return;
+
     } else {
         nextSlide();
     }
@@ -127,7 +127,7 @@ detailBtn_575.addEventListener('click', function() {
 
 
 //--- stages slider
-window.addEventListener('DOMContentLoaded', (event) => {
+window.addEventListener('DOMContentLoaded', () => {
     let container = document.querySelector('.main_transformStages_blocks_575-wrapper');
     let blocks = container.children;
     let indicators = document.querySelectorAll('.slider_countSlide__point');
@@ -194,7 +194,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 });
 
 //--- players slider
-window.addEventListener('DOMContentLoaded', (event) => {
+window.addEventListener('DOMContentLoaded', () => {
     let container = document.querySelector('.main_participants__players_575');
     let blocks = container.children;
     let totalSlides = blocks.length;
