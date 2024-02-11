@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap');
 
-* {
+body {
     margin: 0;
     padding: 0;
+}
+
+*,
+*::after,
+*::before  {
     box-sizing: border-box;
 }
 
@@ -16,4 +21,19 @@
     --color-secondary: #3057A2;
     --color-accent: #F54932;
     --color-background: #E9DED4;
+
+    --header-bg-color: #E9DED4;
+    --header-bg-image: url(public/image23.png);
+    --ellips-bg-image: url(public/sunBg.png);
+    --city-bg-image: url(public/citybg.png);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1336px;
+    width: 100%;
+}
+
+.container-flex {
+    display: flex;
 }
